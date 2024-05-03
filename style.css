@@ -1,0 +1,426 @@
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: inherit;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+button {
+    appearance: none; /* Removes default styling (webkit) */
+    -moz-appearance: none; /* Removes default styling (mozilla) */
+    -webkit-appearance: none; /* Removes default styling (webkit) */
+    background-color: transparent; /* Removes default background */
+    border: none; /* Removes default border */
+    margin: 0; /* Resets margin */
+    padding: 0; /* Resets padding */
+    font-family: inherit; /* Inherits font from parent */
+    font-size: inherit; /* Inherits font size from parent */
+    cursor: pointer; /* Default cursor */
+    outline: none; /* Removes outline */
+    /* Add any other reset styles as needed */
+}
+
+
+.page-container {
+    height: 100vh; /* Full height of the viewport */
+    width: 100%;
+    display: grid;
+    grid-template-columns: clamp(200px, 20%, 500px) 1fr;
+    grid-template-rows: clamp(80px, 17%, 200px) 1fr;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: deepskyblue;
+    height: 100%;
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 4fr 4fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    background-color: lightgray;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.projects {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px;
+}
+
+.section-header {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: -10px;
+}
+
+.project-card, .announcements-card, .trending-card {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 5px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-description {
+    color: rgb(95, 95, 95);
+}
+
+.card-icons {
+    display: flex;
+    gap: 10px;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-top: auto;
+}
+
+.card-button {
+    margin: 0px 5px;
+}
+
+.announcements {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.announcements-card, .trending-card {
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.announcement-title {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.announcement-body {
+    font-size: 13px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.trending {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trending-user {
+    display: flex;
+}
+
+.trending-user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+
+.user-tag {
+    font-weight: 600;
+}
+
+.logo {
+    display: flex;
+    font-size: 3rem;
+    color: white;
+    align-items: center;
+}
+
+.logo h2 {
+    color: inherit;
+    font-size: inherit;
+}
+
+.sidebar ul {
+    margin-top: 50px;
+}
+
+.sidebar ul li {
+    font-size: 2.5rem;
+    color: white;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0rem;
+}
+
+.sidebar-icon {
+    margin-right: 25px;
+}
+
+a {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40%;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 60%;
+    padding: 0px 50px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.bottom-left, .bottom-right {
+    display: flex;
+}
+
+.bottom-left {
+    gap: 12px;
+}
+
+.bottom-right {
+    gap: 20px;
+}
+
+.search-container {
+    display: flex;
+    width: 60%;
+}
+
+.search-button {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: transparent; /* If needed */
+    border: none; /* If needed */
+}
+
+.search-bar {
+    display: flex;
+    background-color: gray; /* Grey background color */
+    background-color: transparent;
+    overflow: hidden; /* Hide overflowing content */
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.search-bar input[type="text"] {
+    flex: 1; /* Take remaining space */
+    border: 3px solid transparent; /* Remove default input border */
+    padding: 10px; /* Add some padding */
+    font-size: 16px;
+    background-color: lightgray;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.search-bar input[type="text"]:focus {
+    border: 3px solid darkgray;
+    box-sizing: border-box;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 50px;
+}
+
+.action-button {
+    background-color: transparent;
+    border: none;
+    margin-right: 10px; /* Adjust spacing between elements */
+}
+
+.thumbnail-container-s {
+    width: 40px; /* Adjust thumbnail size */
+    height: 40px; /* Adjust thumbnail size */
+    overflow: hidden;
+    border-radius: 50%; /* Creates circular shape */
+    margin-right: 10px; /* Adjust spacing between elements */
+}
+
+.thumbnail-container-l {
+    width: 60px; /* Adjust thumbnail size */
+    height: 60px; /* Adjust thumbnail size */
+    overflow: hidden;
+    border-radius: 50%; /* Creates circular shape */
+    margin-right: 10px; /* Adjust spacing between elements */
+}
+
+.profile-thumbnail {
+    width: 100%; /* Ensures the image fills the container */
+    height: auto;
+    border-radius: 50%; /* Ensures the image is circular */
+}
+
+.username-link {
+    color: #333; /* Adjust text color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+.hi {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-button {
+    background-color: dodgerblue;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
