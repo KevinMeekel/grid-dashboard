@@ -80,16 +80,17 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  color: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    color: inherit;
 }
 
-body, html {
+body,
+html {
     height: 100%;
     margin: 0;
     font-family: "Roboto", "Arial", sans-serif;
@@ -103,30 +104,28 @@ button {
     appearance: none; /* Removes default styling (webkit) */
     -moz-appearance: none; /* Removes default styling (mozilla) */
     -webkit-appearance: none; /* Removes default styling (webkit) */
-    background-color: transparent; /* Removes default background */
-    border: none; /* Removes default border */
-    margin: 0; /* Resets margin */
-    padding: 0; /* Resets padding */
-    font-family: inherit; /* Inherits font from parent */
-    font-size: inherit; /* Inherits font size from parent */
-    cursor: pointer; /* Default cursor */
-    outline: none; /* Removes outline */
-    /* Add any other reset styles as needed */
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
 }
 
-
 .page-container {
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 260px 1fr;
     grid-template-rows: clamp(80px, 17%, 200px) 1fr;
 }
 
 .sidebar {
     display: flex;
     flex-direction: column;
-    background-color: deepskyblue;
+    background-color: #08605c;
     height: 100%;
     width: 100%;
     grid-row-start: 1;
@@ -149,7 +148,7 @@ button {
     grid-template-columns: 4fr 4fr 3fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
-    background-color: lightgray;
+    background-color: #e2e2e2;
     padding: 20px;
 }
 
@@ -171,7 +170,9 @@ button {
     margin-bottom: -10px;
 }
 
-.project-card, .announcements-card, .trending-card {
+.project-card,
+.announcements-card,
+.trending-card {
     background-color: white;
     border-radius: 5px;
     display: flex;
@@ -213,13 +214,14 @@ button {
     gap: 20px;
 }
 
-.announcements-card, .trending-card {
+.announcements-card,
+.trending-card {
     justify-content: space-evenly;
     height: 100%;
 }
 
 .announcement-title {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -265,7 +267,7 @@ button {
 
 .logo h2 {
     color: inherit;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .sidebar ul {
@@ -273,7 +275,7 @@ button {
 }
 
 .sidebar ul li {
-    font-size: 30px;
+    font-size: 23px;
     color: white;
     list-style: none;
     display: flex;
@@ -300,7 +302,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     height: 40%;
-    padding: 0px 50px;
+    padding: 5px 50px 0px 50px;
     box-sizing: border-box;
 }
 
@@ -314,7 +316,8 @@ a:hover {
     justify-content: space-between;
 }
 
-.bottom-left, .bottom-right {
+.bottom-left,
+.bottom-right {
     display: flex;
 }
 
@@ -333,27 +336,27 @@ a:hover {
 
 .search-button {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    background-color: transparent; /* If needed */
-    border: none; /* If needed */
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
 }
 
 .search-bar {
     display: flex;
-    background-color: gray; /* Grey background color */
+    background-color: gray;
     background-color: transparent;
-    overflow: hidden; /* Hide overflowing content */
+    overflow: hidden;
     flex-grow: 1;
     box-sizing: border-box;
 }
 
 .search-bar input[type="text"] {
-    flex: 1; /* Take remaining space */
-    border: 3px solid transparent; /* Remove default input border */
-    padding: 10px; /* Add some padding */
+    flex: 1;
+    border: 3px solid transparent;
+    padding: 10px;
     font-size: 16px;
-    background-color: lightgray;
+    background-color: #e2e2e2;
     border-radius: 20px;
     box-sizing: border-box;
 }
@@ -373,33 +376,33 @@ a:hover {
 .action-button {
     background-color: transparent;
     border: none;
-    margin-right: 10px; /* Adjust spacing between elements */
+    margin-right: 10px;
 }
 
 .thumbnail-container-s {
-    width: 40px; /* Adjust thumbnail size */
-    height: 40px; /* Adjust thumbnail size */
+    width: 40px;
+    height: 40px;
     overflow: hidden;
-    border-radius: 50%; /* Creates circular shape */
-    margin-right: 10px; /* Adjust spacing between elements */
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .thumbnail-container-l {
-    width: 60px; /* Adjust thumbnail size */
-    height: 60px; /* Adjust thumbnail size */
+    width: 60px;
+    height: 60px;
     overflow: hidden;
-    border-radius: 50%; /* Creates circular shape */
-    margin-right: 10px; /* Adjust spacing between elements */
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .profile-thumbnail {
-    width: 100%; /* Ensures the image fills the container */
+    width: 100%;
     height: auto;
-    border-radius: 50%; /* Ensures the image is circular */
+    border-radius: 50%;
 }
 
 .username-link {
-    color: #333; /* Adjust text color */
+    color: #333;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
@@ -423,10 +426,147 @@ a:hover {
 }
 
 .header-button {
-    background-color: dodgerblue;
+    background-color: #08605c;
     color: white;
     font-size: 18px;
     font-weight: bold;
     border-radius: 20px;
     padding: 10px 30px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .header {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .projects {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section-header {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .project-card,
+    .announcements-card,
+    .trending-card {
+        padding: 15px 10px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-description {
+        font-size: 14px;
+    }
+
+    .announcements,
+    .trending {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header-top {
+        flex-wrap: nowrap; /* allow items to stack if needed */
+        padding: 10px 15px;
+        gap: 10px;
+        height: auto;
+    }
+
+    .header-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px 15px;
+    }
+
+    .search-container {
+        flex: 1 1 auto; /* allow it to shrink if needed */
+        display: flex;
+        gap: 5px;
+        min-width: 0; /* prevents overflow */
+    }
+
+    .search-bar {
+        flex: 1 1 auto; /* grow but shrink if needed */
+    }
+
+    .thumbnail-container-s {
+        width: 30px;
+        height: 30px;
+    }
+
+    .username-link {
+        font-size: 14px;
+    }
+
+    .search-bar input[type="text"] {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .search-button img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-shrink: 0; /* prevent it from shrinking too much */
+    }
+
+    .sidebar ul {
+        margin-top: 0;
+    }
+
+    .sidebar ul li {
+        font-size: 15px;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .card-icons {
+        justify-content: flex-start;
+    }
+
+    .header-button {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
 }

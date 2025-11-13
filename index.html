@@ -1,297 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <body>
+        <div class="page-container">
+            <nav class="sidebar">
+                <div class="logo">
+                    <img
+                        src="./icons/flipboard.svg"
+                        class="sidebar-icon"
+                        alt="home"
+                        height="36px"
+                        width="36px"
+                    />
+                    <h2 class="logo-text">Dashboard</h2>
+                </div>
+                <ul>
+                    <li>
+                        <img
+                            src="./icons/home.svg"
+                            class="sidebar-icon"
+                            alt="home"
+                            height="25px"
+                            width="25px"
+                        />
+                        <a href="" class="sidebar-link">Home</a>
+                    </li>
+                    <li>
+                        <img
+                            src="./icons/profile.svg"
+                            class="sidebar-icon"
+                            alt="home"
+                            height="25px"
+                            width="25px"
+                        />
+                        <a href="" class="sidebar-link">Profile</a>
+                    </li>
+                    <li>
+                        <img
+                            src="./icons/messages.svg"
+                            class="sidebar-icon"
+                            alt="home"
+                            height="25px"
+                            width="25px"
+                        />
+                        <a href="" class="sidebar-link">Messages</a>
+                    </li>
+                    <li>
+                        <img
+                            src="./icons/history.svg"
+                            class="sidebar-icon"
+                            alt="home"
+                            height="25px"
+                            width="25px"
+                        />
+                        <a href="" class="sidebar-link">History</a>
+                    </li>
+                    <li>
+                        <img
+                            src="./icons/tasks.svg"
+                            class="sidebar-icon"
+                            alt="home"
+                            height="25px"
+                            width="25px"
+                        />
+                        <a href="" class="sidebar-link">Tasks</a>
+                    </li>
+                    <li>
+                        <img
+                            src="./icons/community.svg"
+                            class="sidebar-icon"
+                            alt="home"
+                            height="25px"
+                            width="25px"
+                        />
+                        <a href="" class="sidebar-link">Community</a>
+                    </li>
+                </ul>
 
-<body>
-    <div class="page-container">
-        <nav class="sidebar">
-            <div class="logo">
-                <img src="./icons/flipboard.svg" class="sidebar-icon" alt="home" height="36px" width="36px">
-                <h2 class="logo-text">Dashboard</h2>
-            </div>
-            <ul>
-                <li>
-                    <img src="./icons/home.svg" class="sidebar-icon" alt="home" height="25px" width="25px">
-                    <a href="" class="sidebar-link">Home</a>
-                </li>
-                <li>
-                    <img src="./icons/profile.svg" class="sidebar-icon" alt="home" height="25px" width="25px">
-                    <a href="" class="sidebar-link">Profile</a>
-                </li>
-                <li>
-                    <img src="./icons/messages.svg" class="sidebar-icon" alt="home" height="25px" width="25px">
-                    <a href="" class="sidebar-link">Messages</a>
-                </li>
-                <li>
-                    <img src="./icons/history.svg" class="sidebar-icon" alt="home" height="25px" width="25px">
-                    <a href="" class="sidebar-link">History</a>
-                </li>
-                <li>
-                    <img src="./icons/tasks.svg" class="sidebar-icon" alt="home" height="25px" width="25px">
-                    <a href="" class="sidebar-link">Tasks</a>
-                </li>
-                <li>
-                    <img src="./icons/community.svg" class="sidebar-icon" alt="home" height="25px" width="25px">
-                    <a href="" class="sidebar-link">Community</a>
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    <img src="./icons/settings.svg" class="sidebar-icon" alt="home" height="25px" width="25px">
-                    <a href="" class="sidebar-link">Settings</a>
-                </li>
-                <li>
-                    <img src="./icons/support.svg" class="sidebar-icon" alt="home" height="25px" width="25px">
-                    <a href="" class="sidebar-link">Support</a>
-                </li>
-                <li>
-                    <img src="./icons/privacy.svg" class="sidebar-icon" alt="home" height="25px" width="25px">
-                    <a href="" class="sidebar-link">Privacy</a>
-                </li>
-            </ul>
-        </nav>
-        <header class="header">
-
-            <div class="header-top">
-
-                <div class="search-container">
-                    <button type="submit" class="search-button">
-                        <img src="./icons/search.svg" class="sidebar-icon" alt="home" height="25px" width="25px">
-                    </button>
-                    <div class="search-bar">
-                        <input type="text" placeholder="Search...">
-                    </div>
-                </div>
-
-                <div class="header-actions">
-                    <button type="button" class="action-button">
-                        <img src="./icons/bell.svg" alt="notifications" height="25px" width="25px">
-                    </button>
-                    <div class="thumbnail-container-s">
-                        <img src="./icons/profile.jpg" alt="profile" class="profile-thumbnail">
-                    </div>
-                    <a href="#" class="username-link">Morgan Oakley</a>
-                </div>
-            </div>
-            <div class="header-bottom">
-                <div class="bottom-left">
-                    <div class="thumbnail-container-l">
-                        <img src="./icons/profile.jpg" alt="profile" class="profile-thumbnail">
-                    </div>
-                    <div class="greeting">
-                        <span class="hi">Hi there,</span>
-                        <span class="username">Morgan Oakley (@morgan)</span>
-                    </div>
-                </div>
-
-                <div class="bottom-right">
-                    <button class="header-button">New</button>
-                    <button class="header-button">Upload</button>
-                    <button class="header-button">Share</button>
-                </div>
-
-            </div>
-        </header>
-        <main class="main">
-            <div class="projects">
-                <div class="section-header">
-                    <h2>Your Projects</h2>
-                </div>
-                <div class="project-card">
-                    <span class="card-title">Super Cool Project</span>
-                    <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-                        dignissimos aspernatur saepe harum voluptas necessitatibus molestiae minus cumque aliquid amet!
-                    </p>
-                    <div class="card-icons">
-                        <button type="button" class="card-button">
-                            <img src="./icons/star.svg" alt="favorite" height="25px" width="25px">
+                <ul>
+                    <li>
+                        <img
+                            src="./icons/settings.svg"
+                            class="sidebar-icon"
+                            alt="home"
+                            height="25px"
+                            width="25px"
+                        />
+                        <a href="" class="sidebar-link">Settings</a>
+                    </li>
+                    <li>
+                        <img
+                            src="./icons/support.svg"
+                            class="sidebar-icon"
+                            alt="home"
+                            height="25px"
+                            width="25px"
+                        />
+                        <a href="" class="sidebar-link">Support</a>
+                    </li>
+                    <li>
+                        <img
+                            src="./icons/privacy.svg"
+                            class="sidebar-icon"
+                            alt="home"
+                            height="25px"
+                            width="25px"
+                        />
+                        <a href="" class="sidebar-link">Privacy</a>
+                    </li>
+                </ul>
+            </nav>
+            <header class="header">
+                <div class="header-top">
+                    <div class="search-container">
+                        <button type="submit" class="search-button">
+                            <img
+                                src="./icons/search.svg"
+                                class="sidebar-icon"
+                                alt="home"
+                                height="25px"
+                                width="25px"
+                            />
                         </button>
-                        <button type="button" class="card-button">
-                            <img src="./icons/eye.svg" alt="watch later" height="25px" width="25px">
-                        </button>
-                        <button type="button" class="card-button">
-                            <img src="./icons/share.svg" alt="share" height="25px" width="25px">
-                        </button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="card-title">Less Cool Project</span>
-                    <p class="card-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, aut?
-                        Eum nesciunt recusandae a magni.</p>
-                    <div class="card-icons">
-                        <button type="button" class="card-button">
-                            <img src="./icons/star.svg" alt="favorite" height="25px" width="25px">
-                        </button>
-                        <button type="button" class="card-button">
-                            <img src="./icons/eye.svg" alt="watch later" height="25px" width="25px">
-                        </button>
-                        <button type="button" class="card-button">
-                            <img src="./icons/share.svg" alt="share" height="25px" width="25px">
-                        </button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="card-title">Impossible App</span>
-                    <p class="card-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, aut
-                        veniam ut inventore voluptatem expedita porro autem deleniti ab perspiciatis nihil ipsa, hic
-                        doloribus exercitationem.</p>
-                    <div class="card-icons">
-                        <button type="button" class="card-button">
-                            <img src="./icons/star.svg" alt="favorite" height="25px" width="25px">
-                        </button>
-                        <button type="button" class="card-button">
-                            <img src="./icons/eye.svg" alt="watch later" height="25px" width="25px">
-                        </button>
-                        <button type="button" class="card-button">
-                            <img src="./icons/share.svg" alt="share" height="25px" width="25px">
-                        </button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="card-title">Twitter 2.0</span>
-                    <p class="card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam,
-                        tenetur!</p>
-                    <div class="card-icons">
-                        <button type="button" class="card-button">
-                            <img src="./icons/star.svg" alt="favorite" height="25px" width="25px">
-                        </button>
-                        <button type="button" class="card-button">
-                            <img src="./icons/eye.svg" alt="watch later" height="25px" width="25px">
-                        </button>
-                        <button type="button" class="card-button">
-                            <img src="./icons/share.svg" alt="share" height="25px" width="25px">
-                        </button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="card-title">Group Project</span>
-                    <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                        architecto inventore culpa dolorum eos laboriosam reiciendis at ut ab quis deserunt nostrum
-                        voluptate exercitationem, sunt laudantium placeat est illo minus.</p>
-                    <div class="card-icons">
-                        <button type="button" class="card-button">
-                            <img src="./icons/star.svg" alt="favorite" height="25px" width="25px">
-                        </button>
-                        <button type="button" class="card-button">
-                            <img src="./icons/eye.svg" alt="watch later" height="25px" width="25px">
-                        </button>
-                        <button type="button" class="card-button">
-                            <img src="./icons/share.svg" alt="share" height="25px" width="25px">
-                        </button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="card-title">Awesome Game</span>
-                    <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, iure.
-                        Nobis, doloribus.</p>
-                    <div class="card-icons">
-                        <button type="button" class="card-button">
-                            <img src="./icons/star.svg" alt="favorite" height="25px" width="25px">
-                        </button>
-                        <button type="button" class="card-button">
-                            <img src="./icons/eye.svg" alt="watch later" height="25px" width="25px">
-                        </button>
-                        <button type="button" class="card-button">
-                            <img src="./icons/share.svg" alt="share" height="25px" width="25px">
-                        </button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="card-title">Auto Row showcase</span>
-                    <p class="card-description">This card gets its position from the auto-rows property. I am the
-                        greatest
-                        web developer of all time.</p>
-                    <div class="card-icons">
-                        <button type="button" class="card-button">
-                            <img src="./icons/star.svg" alt="favorite" height="25px" width="25px">
-                        </button>
-                        <button type="button" class="card-button">
-                            <img src="./icons/eye.svg" alt="watch later" height="25px" width="25px">
-                        </button>
-                        <button type="button" class="card-button">
-                            <img src="./icons/share.svg" alt="share" height="25px" width="25px">
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-            <div class="announcements">
-                <div class="section-header">
-                    <h2>Announcements</h2>
-                </div>
-                <div class="announcements-card">
-                    <div class="announcement-message">
-                        <span class="announcement-title">Site Maintenance</span>
-                        <p class="announcement-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-                            debitis in quo quae, enim atque reprehenderit consequuntur incidunt dicta nulla?</p>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="announcement-message">
-                        <span class="announcement-title">Community Share Day</span>
-                        <p class="announcement-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
-                            repudiandae sunt esse? Amet sed consequuntur explicabo veritatis sunt mollitia culpa?</p>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="announcement-message">
-                        <span class="announcement-title">Updated Privacy Policy</span>
-                        <p class="announcement-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eos
-                            error sed nihil dicta esse consequuntur perferendis cupiditate quis hic?</p>
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search..." />
+                        </div>
                     </div>
 
+                    <div class="header-actions">
+                        <button type="button" class="action-button">
+                            <img
+                                src="./icons/bell.svg"
+                                alt="notifications"
+                                height="25px"
+                                width="25px"
+                            />
+                        </button>
+                        <div class="thumbnail-container-s">
+                            <img
+                                src="./icons/profile.jpg"
+                                alt="profile"
+                                class="profile-thumbnail"
+                            />
+                        </div>
+                        <a href="#" class="username-link">Morgan Oakley</a>
+                    </div>
                 </div>
-            </div>
-            <div class="trending">
-                <div class="section-header">
-                    <h2>Trending</h2>
-                </div>
-                <div class="trending-card">
-                    <div class="trending-user">
+                <div class="header-bottom">
+                    <div class="bottom-left">
                         <div class="thumbnail-container-l">
-                            <img src="./icons/profile.jpg" alt="profile" class="profile-thumbnail">
+                            <img
+                                src="./icons/profile.jpg"
+                                alt="profile"
+                                class="profile-thumbnail"
+                            />
                         </div>
-                        <div class="trending-user-info">
-                            <span class="user-tag">@tegan</span>
-                            <span class="user-description">World Peace Builder</span>
-                        </div>
-                    </div>
-                    <div class="trending-user">
-                        <div class="thumbnail-container-l">
-                            <img src="./icons/profile.jpg" alt="profile" class="profile-thumbnail">
-                        </div>
-                        <div class="trending-user-info">
-                            <span class="user-tag">@morgan</span>
-                            <span class="user-description">Super Cool Project</span>
+                        <div class="greeting">
+                            <span class="hi">Hi there,</span>
+                            <span class="username"
+                                >Morgan Oakley (@morgan)</span
+                            >
                         </div>
                     </div>
-                    <div class="trending-user">
-                        <div class="thumbnail-container-l">
-                            <img src="./icons/profile.jpg" alt="profile" class="profile-thumbnail">
-                        </div>
-                        <div class="trending-user-info">
-                            <span class="user-tag">@kendall</span>
-                            <span class="user-description">Life-changing App</span>
+
+                    <div class="bottom-right">
+                        <button class="header-button">New</button>
+                        <button class="header-button">Upload</button>
+                        <button class="header-button">Share</button>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="projects">
+                    <div class="section-header">
+                        <h2>Your Projects</h2>
+                    </div>
+                    <div class="project-card">
+                        <span class="card-title">Super Cool Project</span>
+                        <p class="card-description">
+                            A groundbreaking project exploring new ideas and
+                            creative solutions that push the boundaries of
+                            what’s possible in modern web development.
+                        </p>
+                        <div class="card-icons">
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/star.svg"
+                                    alt="favorite"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/eye.svg"
+                                    alt="watch later"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/share.svg"
+                                    alt="share"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
                         </div>
                     </div>
-                    <div class="trending-user">
-                        <div class="thumbnail-container-l">
-                            <img src="./icons/profile.jpg" alt="profile" class="profile-thumbnail">
+                    <div class="project-card">
+                        <span class="card-title">Less Cool Project</span>
+                        <p class="card-description">
+                            A small experiment with features that didn’t quite
+                            make it big, but still demonstrates useful concepts
+                            and functionality.
+                        </p>
+                        <div class="card-icons">
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/star.svg"
+                                    alt="favorite"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/eye.svg"
+                                    alt="watch later"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/share.svg"
+                                    alt="share"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
                         </div>
-                        <div class="trending-user-info">
-                            <span class="user-tag">@Alex</span>
-                            <span class="user-description">No Traffic Maker</span>
+                    </div>
+                    <div class="project-card">
+                        <span class="card-title">Impossible App</span>
+                        <p class="card-description">
+                            An ambitious app concept designed to challenge
+                            expectations, combining complex features and daring
+                            ideas that may or may not work.
+                        </p>
+                        <div class="card-icons">
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/star.svg"
+                                    alt="favorite"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/eye.svg"
+                                    alt="watch later"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/share.svg"
+                                    alt="share"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <span class="card-title">Twitter 2.0</span>
+                        <p class="card-description">
+                            A redesigned social media experience, rethinking
+                            timelines, engagement, and interactions for a
+                            smarter, cleaner platform.
+                        </p>
+                        <div class="card-icons">
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/star.svg"
+                                    alt="favorite"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/eye.svg"
+                                    alt="watch later"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/share.svg"
+                                    alt="share"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <span class="card-title">Group Project</span>
+                        <p class="card-description">
+                            Collaboration at its finest—multiple minds joining
+                            forces to build something larger than the sum of its
+                            parts.
+                        </p>
+                        <div class="card-icons">
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/star.svg"
+                                    alt="favorite"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/eye.svg"
+                                    alt="watch later"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/share.svg"
+                                    alt="share"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <span class="card-title">Awesome Game</span>
+                        <p class="card-description">
+                            An engaging game with creative mechanics and fun
+                            interactions, designed to entertain while showcasing
+                            programming skills.
+                        </p>
+                        <div class="card-icons">
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/star.svg"
+                                    alt="favorite"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/eye.svg"
+                                    alt="watch later"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/share.svg"
+                                    alt="share"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <span class="card-title">Auto Row showcase</span>
+                        <p class="card-description">
+                            A demo highlighting automatic layout generation,
+                            featuring dynamic rows that adjust to content
+                            seamlessly.
+                        </p>
+                        <div class="card-icons">
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/star.svg"
+                                    alt="favorite"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/eye.svg"
+                                    alt="watch later"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
+                            <button type="button" class="card-button">
+                                <img
+                                    src="./icons/share.svg"
+                                    alt="share"
+                                    height="25px"
+                                    width="25px"
+                                />
+                            </button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </main>
-    </div>
-</body>
-
+                <div class="announcements">
+                    <div class="section-header">
+                        <h2>Announcements</h2>
+                    </div>
+                    <div class="announcements-card">
+                        <div class="announcement-message">
+                            <span class="announcement-title"
+                                >Site Maintenance</span
+                            >
+                            <p class="announcement-body">
+                                Scheduled maintenance will occur tonight,
+                                ensuring faster load times, improved stability,
+                                and better overall user experience.
+                            </p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="announcement-message">
+                            <span class="announcement-title"
+                                >Community Share Day</span
+                            >
+                            <p class="announcement-body">
+                                Join us for a day of sharing ideas, tips, and
+                                projects within the community—everyone is
+                                welcome to participate!
+                            </p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="announcement-message">
+                            <span class="announcement-title"
+                                >Updated Privacy Policy</span
+                            >
+                            <p class="announcement-body">
+                                Our privacy policy has been updated to provide
+                                more transparency about data usage and
+                                protection.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending">
+                    <div class="section-header">
+                        <h2>Trending</h2>
+                    </div>
+                    <div class="trending-card">
+                        <div class="trending-user">
+                            <div class="thumbnail-container-l">
+                                <img
+                                    src="./icons/profile.jpg"
+                                    alt="profile"
+                                    class="profile-thumbnail"
+                                />
+                            </div>
+                            <div class="trending-user-info">
+                                <span class="user-tag">@tegan</span>
+                                <span class="user-description"
+                                    >World Peace Builder</span
+                                >
+                            </div>
+                        </div>
+                        <div class="trending-user">
+                            <div class="thumbnail-container-l">
+                                <img
+                                    src="./icons/profile.jpg"
+                                    alt="profile"
+                                    class="profile-thumbnail"
+                                />
+                            </div>
+                            <div class="trending-user-info">
+                                <span class="user-tag">@morgan</span>
+                                <span class="user-description"
+                                    >Super Cool Project</span
+                                >
+                            </div>
+                        </div>
+                        <div class="trending-user">
+                            <div class="thumbnail-container-l">
+                                <img
+                                    src="./icons/profile.jpg"
+                                    alt="profile"
+                                    class="profile-thumbnail"
+                                />
+                            </div>
+                            <div class="trending-user-info">
+                                <span class="user-tag">@kendall</span>
+                                <span class="user-description"
+                                    >Life-changing App</span
+                                >
+                            </div>
+                        </div>
+                        <div class="trending-user">
+                            <div class="thumbnail-container-l">
+                                <img
+                                    src="./icons/profile.jpg"
+                                    alt="profile"
+                                    class="profile-thumbnail"
+                                />
+                            </div>
+                            <div class="trending-user-info">
+                                <span class="user-tag">@Alex</span>
+                                <span class="user-description"
+                                    >No Traffic Maker</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
 </html>
